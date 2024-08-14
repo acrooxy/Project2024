@@ -28,3 +28,23 @@ print('The result was {r:10.5f}'.format(r=result)) # {value:space for the number
 name = "Jose"
 age = 3
 print(f"Hi, his name is {name} and he is {age}.")
+
+# LISTS
+a_list = ['STRING', 100, 12.5]
+print(len(a_list))
+print(a_list[1])
+li = [0, 1, 2.3]
+print(a_list + li) # to save changes I need to assign it to new value
+new_list = a_list + li
+
+new_list[0] = 'ONE ALL CAPS'
+print(new_list)
+new_list.append('New item six')
+print(new_list)
+print(new_list.pop())
+alphabet = ['a', 'b', 'c', 'x', 'o', 'q']
+print(alphabet.sort())
+sorted_alphabet = alphabet # to run sorted list we need to assign it to new value
+print(sorted_alphabet)
+sorted_alphabet.reverse()
+print(sorted_alphabet)
