@@ -48,3 +48,33 @@ sorted_alphabet = alphabet # to run sorted list we need to assign it to new valu
 print(sorted_alphabet)
 sorted_alphabet.reverse()
 print(sorted_alphabet)
+
+DictA = {'key1':'value1', 'key2':'value2'}
+print(DictA['key1'])
+prices_lookup = {'apple':2.99, 'oranges':1.99, 'milk':5}
+print(prices_lookup['milk'])
+d = {'k1':123, 'k2':[0,1,2,3.4],'k3':{'insideKey':100}}
+
+print(d['k3']['insideKey'])
+
+d = {'key1':['a','b','c']}
+mylist = d['key1']
+letter = mylist[2]
+print(letter)
+print(letter.upper())
+print(letter)
+
+better_method = d['key1'][1] #Adding new value to Dict
+print(better_method)
+d['k3added'] = 300
+print(d)
+
+#assigning new value to existing key
+
+d['key1'] = 'NEW VALUE'
+print(d)
+
+print(d.keys())
+print(d.values())
+
+print(d.items()) #Tuples 
