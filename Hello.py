@@ -77,4 +77,36 @@ print(d)
 print(d.keys())
 print(d.values())
 
-print(d.items()) #Tuples 
+print(d.items()) #Tuples
+
+T = (1,2,3)
+mylistX = [1,2,3]
+print(type(T), type(mylistX))
+print(T[0])
+
+tt = ('a','a','b','c','a')
+print(tt.count('a'))
+print(tt.index('b'))
+
+myset = set()
+print(myset)
+myset.add(1)
+print(myset)
+myset.add(2)
+myset.add(3)
+myset.add(3) #only one unique value
+print(myset)
+mylisttt = [1,1,1,1,1,2,2,2,2,2,3,443,4,34,34,3,42,43,1,23,123,]
+print(set(mylisttt))
+
+print(set('Mississippi'))
+
+#BOOLEANS
+ss = True
+sss = False
+ssss = None
+print(ss,sss,ssss)
+c = 1 > 2
+print(c)
+print(1==1)
+
