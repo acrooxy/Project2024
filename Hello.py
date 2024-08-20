@@ -110,3 +110,52 @@ c = 1 > 2
 print(c)
 print(1==1)
 
+'h' == 'h' and 2 == 2 #both condition True
+True
+
+1 < 2 > 1
+1 == 1 or 2 == 1 # at least one condition True
+
+not 400 > 5000 # True - asking for opposit boolean
+
+
+# if elif else statements (Colons and Indentations (Wciecia))
+sum = 0
+my_iterable = [1,2,3,4,5,6,7,8,9,10]
+for item in my_iterable:
+    sum += item
+    if item % 2 == 0: # Check for even number
+        print(f'Odd Number: {item}')
+    else:
+        print(item)
+    print(sum)
+
+# Proper iteration if we dont need variable
+a = 'ekstra'
+for _ in a:
+    print(_)
+
+my_list2 = [(1,2,3), (5,6,7), (8,9,10)]
+for item_a, item_b, item_c in my_list2: # unpacking variables
+    print(item_b)
+
+# ittering througt dictionaries
+d = {'k1':1, 'k2':2, 'k3':3}
+
+for key, value in d.items():
+    print(value)
+
+# Loopes
+# while some_boolean_condition:
+    # do something
+# else:
+    # Do something else
+
+x = 0
+while x < 5:
+    print(f'The current value of x is {x}')
+    x += 1
+    # pass comment when need to avoid syntax error
+    #if the leeter == 'a':
+        #continue # and go back to the loop
+        #break stops (breaks out) whole loop
