@@ -304,4 +304,28 @@ for word in stWord:
     else:
         continue
 
-a
+
+numbers = []
+for num in range(0,101):
+    numbers.append(num)
+print(numbers)
+
+for x in numbers:
+    if x%3==0:
+        print('Fizz {}'.format(x))
+    elif x%5==0:
+        print('Buzz {}'.format(x))
+    elif x%3==0 and x%5==0:
+        print('FizzBuzz {}'.format(x))
+    else:
+        print(x)
+
+
+## METHODS AND FUNCTIONS
+
+# .pop , .append
+list = [1,2,4,5]
+print(list)
+
+help(list.insert)
+
