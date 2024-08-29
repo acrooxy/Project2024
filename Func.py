@@ -199,4 +199,58 @@ def reverse_sentence(sentence):
 
 reverse_sentence('Sentence that does not have to make any sense')
 
-print(x)
+
+import math
+
+def area(radius):
+    return math.pi * radius ** 2
+
+
+def radius(area):
+    return math.sqrt(area / math.pi)
+
+
+#if __name__ == '__main__':
+#    choices = {'Radius': (radius, 'Radius', 'Area'), 'Area': (area, 'Area', 'Radius')}
+#    action, calculate, given = choices[input("Calculate Area or Radius? ").capitalize()]
+#    result = action(float(input('To calculate the {}, input the {}: '.format(calculate, given))))
+#    print('The {} is {:.2f}.'.format(calculate, result))
+
+def vol(rad):
+    return (4/3)*(3.14)*(rad**3)
+
+print(vol(50))
+
+def ran_check(low, high, *args):
+    good_numbers = []
+    numbersRange = args
+    for number in numbersRange:
+        if number >= low and number <= high:
+            print('number {} is in range of {} and {}'.format(number, low, high))
+            good_numbers.append(number)
+        else:
+            print('number {} is not in range of {} and {}'.format(number, low, high))
+
+ran_check(1,5,2,3,4,5,6)
+
+'''
+def up_low:
+    lowercase = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,r,s,t,u,w,y,z]
+    uppercase = [A,B,C,D,E,F,G,H,I,J,K,L,O,M,N,O,P,R,S,T,U,W,Y,Z]
+    low_count = 0
+    upper_count = 0
+
+
+    for letter in s:
+        if letter == lowercase:
+            low_count += 1
+            print('Letter {} is lovercased'.format(letter))
+        elif letter == uppercase:
+            upper_count += 1
+            print('Letter {} is uppercased'.format(letter))
+    print('Lowercase count: {} \nUppercase count: {}'.format(low_count,upper_count))
+
+s = 'Hello Mr. Rogers, how are youthis fine Tuesday?'
+up_low('Hello Mr. Rogers, how are youthis fine Tuesday?')
+
+'''
