@@ -259,3 +259,4 @@ up_low('Hello Mr. Rogers, how are youthis fine Tuesday?')
 # same again
 # Practising blueteam
 # Switching to Regent
+# Keep practising on tryhackme.com
